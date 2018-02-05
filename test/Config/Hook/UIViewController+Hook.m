@@ -31,9 +31,7 @@
 #pragma mark - hook collection
 - (void)viewWillAppearHook:(BOOL)isAnimation {
     NSLog(@"hook1..........................");
-    
     [self createClass];
-    
     [self viewWillAppearHook:isAnimation];
 }
 
@@ -43,7 +41,6 @@
     if (class_addIvar(MyClass, "title", sizeof(NSString **), 0, "@")) {
         NSLog(@"create property title success!");
     }
-    
     if (class_addMethod(MyClass, @selector(showMessageSelector:), (IMP)showMessage, "v@:")) {
         NSLog(@"create method showMessage success!");
     }
