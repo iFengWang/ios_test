@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB5F2027FB390098BCAC /* AppDelegate.m */; };
-		51ACFB632027FB390098BCAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB622027FB390098BCAC /* ViewController.m */; };
-		51ACFB662027FB390098BCAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB642027FB390098BCAC /* Main.storyboard */; };
 		51ACFB682027FB390098BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB672027FB390098BCAC /* Assets.xcassets */; };
 		51ACFB6B2027FB390098BCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB692027FB390098BCAC /* LaunchScreen.storyboard */; };
 		51ACFB6E2027FB390098BCAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB6D2027FB390098BCAC /* main.m */; };
 		51ACFB782027FB390098BCAC /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB772027FB390098BCAC /* testTests.m */; };
 		51ACFB832027FB390098BCAC /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB822027FB390098BCAC /* testUITests.m */; };
+		51ACFBA0202805DE0098BCAC /* UIViewController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB9E202805DE0098BCAC /* UIViewController+Hook.m */; };
+		51ACFBAB202806990098BCAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFBA9202806990098BCAC /* ViewController.m */; };
+		51ACFBAE202806E60098BCAC /* UINavigationController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFBAD202806E60098BCAC /* UINavigationController+Hook.m */; };
+		51ACFBB12028070E0098BCAC /* UITabBarController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFBB02028070E0098BCAC /* UITabBarController+Hook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +40,6 @@
 		51ACFB5B2027FB390098BCAC /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ACFB5E2027FB390098BCAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		51ACFB5F2027FB390098BCAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		51ACFB612027FB390098BCAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		51ACFB622027FB390098BCAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		51ACFB652027FB390098BCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51ACFB672027FB390098BCAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51ACFB6A2027FB390098BCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51ACFB6C2027FB390098BCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,17 @@
 		51ACFB7E2027FB390098BCAC /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ACFB822027FB390098BCAC /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		51ACFB842027FB390098BCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51ACFB99202802590098BCAC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		51ACFB9E202805DE0098BCAC /* UIViewController+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hook.m"; sourceTree = "<group>"; };
+		51ACFB9F202805DE0098BCAC /* UIViewController+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hook.h"; sourceTree = "<group>"; };
+		51ACFBA9202806990098BCAC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		51ACFBAA202806990098BCAC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		51ACFBAC202806E60098BCAC /* UINavigationController+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Hook.h"; sourceTree = "<group>"; };
+		51ACFBAD202806E60098BCAC /* UINavigationController+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Hook.m"; sourceTree = "<group>"; };
+		51ACFBAF2028070E0098BCAC /* UITabBarController+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Hook.h"; sourceTree = "<group>"; };
+		51ACFBB02028070E0098BCAC /* UITabBarController+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Hook.m"; sourceTree = "<group>"; };
+		51ACFBB2202808EC0098BCAC /* Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		51ACFBB3202809270098BCAC /* Skins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Skins.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +111,15 @@
 		51ACFB5D2027FB390098BCAC /* test */ = {
 			isa = PBXGroup;
 			children = (
+				51ACFB952028012E0098BCAC /* Config */,
+				51ACFBA32028067A0098BCAC /* Module */,
 				51ACFB5E2027FB390098BCAC /* AppDelegate.h */,
 				51ACFB5F2027FB390098BCAC /* AppDelegate.m */,
-				51ACFB612027FB390098BCAC /* ViewController.h */,
-				51ACFB622027FB390098BCAC /* ViewController.m */,
-				51ACFB642027FB390098BCAC /* Main.storyboard */,
 				51ACFB672027FB390098BCAC /* Assets.xcassets */,
 				51ACFB692027FB390098BCAC /* LaunchScreen.storyboard */,
 				51ACFB6C2027FB390098BCAC /* Info.plist */,
 				51ACFB6D2027FB390098BCAC /* main.m */,
+				51ACFB99202802590098BCAC /* PrefixHeader.pch */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -130,6 +140,62 @@
 				51ACFB842027FB390098BCAC /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		51ACFB952028012E0098BCAC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				51ACFBA12028064B0098BCAC /* Global */,
+				51ACFBA22028064B0098BCAC /* Macros */,
+				51ACFB9D202805DE0098BCAC /* Hook */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		51ACFB9D202805DE0098BCAC /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				51ACFB9E202805DE0098BCAC /* UIViewController+Hook.m */,
+				51ACFB9F202805DE0098BCAC /* UIViewController+Hook.h */,
+				51ACFBAC202806E60098BCAC /* UINavigationController+Hook.h */,
+				51ACFBAD202806E60098BCAC /* UINavigationController+Hook.m */,
+				51ACFBAF2028070E0098BCAC /* UITabBarController+Hook.h */,
+				51ACFBB02028070E0098BCAC /* UITabBarController+Hook.m */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
+		51ACFBA12028064B0098BCAC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		51ACFBA22028064B0098BCAC /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				51ACFBB2202808EC0098BCAC /* Theme.h */,
+				51ACFBB3202809270098BCAC /* Skins.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		51ACFBA32028067A0098BCAC /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				51ACFBA8202806990098BCAC /* MainTab */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		51ACFBA8202806990098BCAC /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				51ACFBAA202806990098BCAC /* ViewController.h */,
+				51ACFBA9202806990098BCAC /* ViewController.m */,
+			);
+			path = MainTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +306,6 @@
 			files = (
 				51ACFB6B2027FB390098BCAC /* LaunchScreen.storyboard in Resources */,
 				51ACFB682027FB390098BCAC /* Assets.xcassets in Resources */,
-				51ACFB662027FB390098BCAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51ACFB632027FB390098BCAC /* ViewController.m in Sources */,
 				51ACFB6E2027FB390098BCAC /* main.m in Sources */,
+				51ACFBAE202806E60098BCAC /* UINavigationController+Hook.m in Sources */,
+				51ACFBB12028070E0098BCAC /* UITabBarController+Hook.m in Sources */,
 				51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */,
+				51ACFBAB202806990098BCAC /* ViewController.m in Sources */,
+				51ACFBA0202805DE0098BCAC /* UIViewController+Hook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +371,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		51ACFB642027FB390098BCAC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51ACFB652027FB390098BCAC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		51ACFB692027FB390098BCAC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +492,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJ6QHVN5KX;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = test/PrefixHeader.pch;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.free.test;
@@ -446,6 +508,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJ6QHVN5KX;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = test/PrefixHeader.pch;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.free.test;
