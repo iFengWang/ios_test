@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (Hook)
-
+- (void)showMessageSelector:(int)p;
 @end

@@ -31,7 +31,33 @@
 #pragma mark - hook collection
 - (void)viewWillAppearHook:(BOOL)isAnimation {
     NSLog(@"hook1..........................");
+    
+    [self createClass];
+    
     [self viewWillAppearHook:isAnimation];
+}
+
+#pragma mark - dynamic create class
+- (void)createClass {
+    Class MyClass = objc_allocateClassPair([NSObject class], "anClass", 0);
+    if (class_addIvar(MyClass, "title", sizeof(NSString **), 0, "@")) {
+        NSLog(@"create property title success!");
+    }
+    
+    if (class_addMethod(MyClass, @selector(showMessageSelector:), (IMP)showMessage, "v@:")) {
+        NSLog(@"create method showMessage success!");
+    }
+    objc_registerClassPair(MyClass);
+    
+    id obj = [[MyClass alloc] init];
+    [obj setValue:@"frank" forKey:@"title"];
+    [obj showMessageSelector:10];
+}
+
+static void showMessage(id self, SEL _cmd, int p) {
+    Ivar varKey = class_getInstanceVariable([self class], "title");
+    id varValue = object_getIvar(self, varKey);
+    NSLog(@"key: %@.....value: %d", varValue, p);
 }
 
 @end

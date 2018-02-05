@@ -155,8 +155,8 @@
 		51ACFB9D202805DE0098BCAC /* Hook */ = {
 			isa = PBXGroup;
 			children = (
-				51ACFB9E202805DE0098BCAC /* UIViewController+Hook.m */,
 				51ACFB9F202805DE0098BCAC /* UIViewController+Hook.h */,
+				51ACFB9E202805DE0098BCAC /* UIViewController+Hook.m */,
 				51ACFBAC202806E60098BCAC /* UINavigationController+Hook.h */,
 				51ACFBAD202806E60098BCAC /* UINavigationController+Hook.m */,
 				51ACFBAF2028070E0098BCAC /* UITabBarController+Hook.h */,
