@@ -9,6 +9,6 @@
 #ifndef Skins_h
 #define Skins_h
 
-#define DEFAUT_MAIN_COLOR           [UIColor colorWithRed:100 green:100 blue:100 alpha:1]
+
 
 #endif /* Skins_h */

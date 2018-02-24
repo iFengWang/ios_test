@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5172D8602041592C00E5E981 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D85D2041592C00E5E981 /* ViewController.m */; };
+		5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D86820415B9900E5E981 /* OneAdaptor.m */; };
+		5193F93E20410A06003709BA /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5193F93D20410A06003709BA /* NetManager.m */; };
+		5193F94120410A27003709BA /* NetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5193F94020410A27003709BA /* NetEngine.m */; };
+		5193F9442041441F003709BA /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5193F9432041441F003709BA /* NetRequest.m */; };
 		51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB5F2027FB390098BCAC /* AppDelegate.m */; };
 		51ACFB682027FB390098BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB672027FB390098BCAC /* Assets.xcassets */; };
 		51ACFB6B2027FB390098BCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB692027FB390098BCAC /* LaunchScreen.storyboard */; };
@@ -14,7 +19,6 @@
 		51ACFB782027FB390098BCAC /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB772027FB390098BCAC /* testTests.m */; };
 		51ACFB832027FB390098BCAC /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB822027FB390098BCAC /* testUITests.m */; };
 		51ACFBA0202805DE0098BCAC /* UIViewController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB9E202805DE0098BCAC /* UIViewController+Hook.m */; };
-		51ACFBAB202806990098BCAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFBA9202806990098BCAC /* ViewController.m */; };
 		51ACFBAE202806E60098BCAC /* UINavigationController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFBAD202806E60098BCAC /* UINavigationController+Hook.m */; };
 		51ACFBB12028070E0098BCAC /* UITabBarController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFBB02028070E0098BCAC /* UITabBarController+Hook.m */; };
 /* End PBXBuildFile section */
@@ -37,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5172D85D2041592C00E5E981 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5172D85E2041592C00E5E981 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5172D86720415B9900E5E981 /* OneAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneAdaptor.h; sourceTree = "<group>"; };
+		5172D86820415B9900E5E981 /* OneAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneAdaptor.m; sourceTree = "<group>"; };
+		5193F93C20410A06003709BA /* NetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		5193F93D20410A06003709BA /* NetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		5193F93F20410A27003709BA /* NetEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetEngine.h; sourceTree = "<group>"; };
+		5193F94020410A27003709BA /* NetEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetEngine.m; sourceTree = "<group>"; };
+		5193F9422041441F003709BA /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
+		5193F9432041441F003709BA /* NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
 		51ACFB5B2027FB390098BCAC /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ACFB5E2027FB390098BCAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		51ACFB5F2027FB390098BCAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,8 +67,6 @@
 		51ACFB99202802590098BCAC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		51ACFB9E202805DE0098BCAC /* UIViewController+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hook.m"; sourceTree = "<group>"; };
 		51ACFB9F202805DE0098BCAC /* UIViewController+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hook.h"; sourceTree = "<group>"; };
-		51ACFBA9202806990098BCAC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		51ACFBAA202806990098BCAC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		51ACFBAC202806E60098BCAC /* UINavigationController+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Hook.h"; sourceTree = "<group>"; };
 		51ACFBAD202806E60098BCAC /* UINavigationController+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Hook.m"; sourceTree = "<group>"; };
 		51ACFBAF2028070E0098BCAC /* UITabBarController+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Hook.h"; sourceTree = "<group>"; };
@@ -88,6 +100,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5172D85A2041592C00E5E981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5172D85B2041592C00E5E981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5172D85C2041592C00E5E981 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5172D85E2041592C00E5E981 /* ViewController.h */,
+				5172D85D2041592C00E5E981 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5172D85F2041592C00E5E981 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5172D86120415A3800E5E981 /* Adaptor */ = {
+			isa = PBXGroup;
+			children = (
+				5172D86720415B9900E5E981 /* OneAdaptor.h */,
+				5172D86820415B9900E5E981 /* OneAdaptor.m */,
+			);
+			path = Adaptor;
+			sourceTree = "<group>";
+		};
+		5193F9382041055B003709BA /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				5193F93C20410A06003709BA /* NetManager.h */,
+				5193F93D20410A06003709BA /* NetManager.m */,
+				5193F93F20410A27003709BA /* NetEngine.h */,
+				5193F94020410A27003709BA /* NetEngine.m */,
+				5193F9422041441F003709BA /* NetRequest.h */,
+				5193F9432041441F003709BA /* NetRequest.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
 		51ACFB522027FB390098BCAC = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +248,8 @@
 		51ACFBA32028067A0098BCAC /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				5172D86120415A3800E5E981 /* Adaptor */,
+				5193F9382041055B003709BA /* Net */,
 				51ACFBA8202806990098BCAC /* MainTab */,
 			);
 			path = Module;
@@ -192,8 +258,10 @@
 		51ACFBA8202806990098BCAC /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
-				51ACFBAA202806990098BCAC /* ViewController.h */,
-				51ACFBA9202806990098BCAC /* ViewController.m */,
+				5172D85C2041592C00E5E981 /* Controller */,
+				5172D85B2041592C00E5E981 /* Model */,
+				5172D85A2041592C00E5E981 /* View */,
+				5172D85F2041592C00E5E981 /* ViewModel */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -330,11 +398,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5172D8602041592C00E5E981 /* ViewController.m in Sources */,
 				51ACFB6E2027FB390098BCAC /* main.m in Sources */,
+				5193F93E20410A06003709BA /* NetManager.m in Sources */,
 				51ACFBAE202806E60098BCAC /* UINavigationController+Hook.m in Sources */,
+				5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */,
 				51ACFBB12028070E0098BCAC /* UITabBarController+Hook.m in Sources */,
+				5193F94120410A27003709BA /* NetEngine.m in Sources */,
 				51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */,
-				51ACFBAB202806990098BCAC /* ViewController.m in Sources */,
+				5193F9442041441F003709BA /* NetRequest.m in Sources */,
 				51ACFBA0202805DE0098BCAC /* UIViewController+Hook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

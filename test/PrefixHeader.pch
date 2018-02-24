@@ -10,6 +10,8 @@
 #define PrefixHeader_pch
 
 #import "UIViewController+Hook.h"
+#import "Theme.h"
 #import "Skins.h"
+#import "NetRequest.h"
 
 #endif /* PrefixHeader_pch */
