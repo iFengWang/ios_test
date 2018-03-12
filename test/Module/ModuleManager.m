@@ -18,7 +18,7 @@ do { \
 
 @interface ModuleManager()
 @property (nonatomic, strong) NSMutableDictionary * targetCache;
-- (id)performWithTarget:(NSObject*)target Selector:(SEL)selector Param:(NSDictionary*)param;
+- (id)performWithTarget:(NSObject*)target Selector:(SEL)action Param:(NSDictionary*)params;
 @end
 
 @implementation ModuleManager
@@ -82,7 +82,7 @@ do { \
     }
 }
 
-- (id)performWithTarget:(NSObject*)target Selector:(SEL)selector Param:(NSDictionary*)param {
+- (id)performWithTarget:(NSObject*)target Selector:(SEL)action Param:(NSDictionary*)params {
     NSMethodSignature* methodSig = [target methodSignatureForSelector:action];
     if(methodSig == nil) {
         return nil;
