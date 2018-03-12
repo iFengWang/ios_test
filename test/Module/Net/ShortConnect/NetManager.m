@@ -30,6 +30,7 @@
     NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:netRequest.router]
                                                             cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                         timeoutInterval:netRequest.timeoutInterval];
+    request.HTTPBody = [NSKeyedArchiver archivedDataWithRootObject:netRequest.param];
     NSURLSessionDataTask * task = [self.netManager dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (!error) {
             success(data, response);
