@@ -9,5 +9,5 @@
 #import "ModuleManager.h"
 
 @interface ModuleManager (mainTab)
-
+- (UIViewController*)mainTabViewController;
 @end

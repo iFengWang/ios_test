@@ -9,5 +9,7 @@
 #import "ModuleManager+mainTab.h"
 
 @implementation ModuleManager (mainTab)
-
+- (UIViewController*)mainTabViewController {
+    return [self callWithTarget:@"" Action:@"" Param:@{} isCacheTarget:YES];
+}
 @end
