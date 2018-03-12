@@ -22,17 +22,47 @@
         Method custMethod = class_getInstanceMethod(selfClass, custSel);
         BOOL isHave = class_addMethod(selfClass, origSel, method_getImplementation(custMethod), method_getTypeEncoding(custMethod));
         if (isHave) {
-            class_addMethod(selfClass, custSel, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
+            class_replaceMethod(selfClass, custSel, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
         } else {
             method_exchangeImplementations(origMethod, custMethod);
         }
     });
 }
 
+- (void)quickSqrtWithAry:(NSMutableArray*)ary Left:(NSInteger)left Right:(NSInteger)right {
+    if (left >= right) return;
+    NSInteger pl = left;
+    NSInteger pr = right;
+    NSInteger mid = [ary[left] integerValue];
+    
+    while(pl != pr) {
+        while ([ary[pr] integerValue]>=mid && pr>pl) {pr--;}
+        while ([ary[pl] integerValue]<=mid && pl<pr) {pl++;}
+        if (pl<pr) {
+            NSNumber *tmp = ary[pl];
+            ary[pl] = ary[pr];
+            ary[pr] = tmp;
+        }
+    }
+    
+    NSNumber *tmp = ary[pl];
+    ary[pl] = @(mid);
+    ary[left] = tmp;
+    
+    [self quickSqrtWithAry:ary Left:left Right:pl-1];
+    [self quickSqrtWithAry:ary Left:pl+1 Right:right];
+}
+
+
 #pragma mark - hook collection
 - (void)viewWillAppearHook:(BOOL)isAnimation {
     NSLog(@"hook1..........................");
-//    [self createClass];
+    //快速排序
+    NSMutableArray *ary = [NSMutableArray arrayWithObjects:@5, @3, @9, @2, @8, @4, @7, @6, @1, nil];
+    NSLog(@"1.....%@",ary);
+    [self quickSqrtWithAry:ary Left:0 Right:ary.count-1];
+    NSLog(@"2.....%@",ary);
+    
     [self viewWillAppearHook:isAnimation];
 }
 
