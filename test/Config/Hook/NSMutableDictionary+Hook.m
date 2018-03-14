@@ -58,7 +58,7 @@
     }
     else if (aKey) {
 //        [(NSMutableDictionary *)self removeObjectForKey:aKey];
-        [self safe_setObject:@"*******" forKey:aKey];
+        [self safe_setObject:[NSNull null] forKey:aKey];
     }
 }
 
