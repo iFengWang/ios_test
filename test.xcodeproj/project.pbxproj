@@ -11,6 +11,7 @@
 		5138861420440CC100446703 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138861120440CC100446703 /* NetRequest.m */; };
 		513886172056598100446703 /* ModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 513886162056598100446703 /* ModuleManager.m */; };
 		5138861B2056815B00446703 /* ModuleManager+mainTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138861A2056815B00446703 /* ModuleManager+mainTab.m */; };
+		5138862120592BC100446703 /* NSMutableDictionary+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138862020592BC100446703 /* NSMutableDictionary+Hook.m */; };
 		5172D8602041592C00E5E981 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D85D2041592C00E5E981 /* ViewController.m */; };
 		5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D86820415B9900E5E981 /* OneAdaptor.m */; };
 		51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB5F2027FB390098BCAC /* AppDelegate.m */; };
@@ -50,6 +51,8 @@
 		513886162056598100446703 /* ModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleManager.m; sourceTree = "<group>"; };
 		513886192056815B00446703 /* ModuleManager+mainTab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModuleManager+mainTab.h"; sourceTree = "<group>"; };
 		5138861A2056815B00446703 /* ModuleManager+mainTab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ModuleManager+mainTab.m"; sourceTree = "<group>"; };
+		5138861F20592BC100446703 /* NSMutableDictionary+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Hook.h"; sourceTree = "<group>"; };
+		5138862020592BC100446703 /* NSMutableDictionary+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Hook.m"; sourceTree = "<group>"; };
 		5172D85D2041592C00E5E981 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5172D85E2041592C00E5E981 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5172D86720415B9900E5E981 /* OneAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneAdaptor.h; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				51ACFBAD202806E60098BCAC /* UINavigationController+Hook.m */,
 				51ACFBAF2028070E0098BCAC /* UITabBarController+Hook.h */,
 				51ACFBB02028070E0098BCAC /* UITabBarController+Hook.m */,
+				5138861F20592BC100446703 /* NSMutableDictionary+Hook.h */,
+				5138862020592BC100446703 /* NSMutableDictionary+Hook.m */,
 			);
 			path = Hook;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 			files = (
 				5172D8602041592C00E5E981 /* ViewController.m in Sources */,
 				5138861220440CC100446703 /* NetManager.m in Sources */,
+				5138862120592BC100446703 /* NSMutableDictionary+Hook.m in Sources */,
 				51ACFB6E2027FB390098BCAC /* main.m in Sources */,
 				51ACFBAE202806E60098BCAC /* UINavigationController+Hook.m in Sources */,
 				5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */,

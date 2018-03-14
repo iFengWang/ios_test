@@ -84,9 +84,7 @@ do { \
 
 - (id)performWithTarget:(NSObject*)target Selector:(SEL)action Param:(NSDictionary*)params {
     NSMethodSignature* methodSig = [target methodSignatureForSelector:action];
-    if(methodSig == nil) {
-        return nil;
-    }
+    if(methodSig == nil)  return nil;
     const char* retType = [methodSig methodReturnType];
     
     if (strcmp(retType, @encode(void)) == 0) {
@@ -96,6 +94,17 @@ do { \
         [invocation setTarget:target];
         [invocation invoke];
         return nil;
+    }
+    
+    if (strcmp(retType, @encode(NSUInteger)) == 0) {
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodSig];
+        [invocation setArgument:&params atIndex:2];
+        [invocation setSelector:action];
+        [invocation setTarget:target];
+        [invocation invoke];
+        NSUInteger result = 0;
+        [invocation getReturnValue:&result];
+        return @(result);
     }
     
     if (strcmp(retType, @encode(NSInteger)) == 0) {
@@ -127,17 +136,6 @@ do { \
         [invocation setTarget:target];
         [invocation invoke];
         CGFloat result = 0;
-        [invocation getReturnValue:&result];
-        return @(result);
-    }
-    
-    if (strcmp(retType, @encode(NSUInteger)) == 0) {
-        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodSig];
-        [invocation setArgument:&params atIndex:2];
-        [invocation setSelector:action];
-        [invocation setTarget:target];
-        [invocation invoke];
-        NSUInteger result = 0;
         [invocation getReturnValue:&result];
         return @(result);
     }
