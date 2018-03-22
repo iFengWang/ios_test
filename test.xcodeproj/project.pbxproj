@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0156EAD72056AF37001DB206 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0156EAD52056AF37001DB206 /* ViewController.m */; };
+		0156EADD2056AF86001DB206 /* Target_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 0156EADC2056AF86001DB206 /* Target_A.m */; };
 		5138861220440CC100446703 /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138860C20440CC100446703 /* NetManager.m */; };
 		5138861420440CC100446703 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138861120440CC100446703 /* NetRequest.m */; };
 		513886172056598100446703 /* ModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 513886162056598100446703 /* ModuleManager.m */; };
 		5138861B2056815B00446703 /* ModuleManager+mainTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138861A2056815B00446703 /* ModuleManager+mainTab.m */; };
-		5172D8602041592C00E5E981 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D85D2041592C00E5E981 /* ViewController.m */; };
 		5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D86820415B9900E5E981 /* OneAdaptor.m */; };
 		51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB5F2027FB390098BCAC /* AppDelegate.m */; };
 		51ACFB682027FB390098BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB672027FB390098BCAC /* Assets.xcassets */; };
@@ -42,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0156EAD52056AF37001DB206 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0156EAD62056AF37001DB206 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0156EADB2056AF86001DB206 /* Target_A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_A.h; sourceTree = "<group>"; };
+		0156EADC2056AF86001DB206 /* Target_A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_A.m; sourceTree = "<group>"; };
 		5138860C20440CC100446703 /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
 		5138860E20440CC100446703 /* NetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		5138860F20440CC100446703 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
@@ -50,8 +55,6 @@
 		513886162056598100446703 /* ModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleManager.m; sourceTree = "<group>"; };
 		513886192056815B00446703 /* ModuleManager+mainTab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModuleManager+mainTab.h"; sourceTree = "<group>"; };
 		5138861A2056815B00446703 /* ModuleManager+mainTab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ModuleManager+mainTab.m"; sourceTree = "<group>"; };
-		5172D85D2041592C00E5E981 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5172D85E2041592C00E5E981 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5172D86720415B9900E5E981 /* OneAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneAdaptor.h; sourceTree = "<group>"; };
 		5172D86820415B9900E5E981 /* OneAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneAdaptor.m; sourceTree = "<group>"; };
 		51ACFB5B2027FB390098BCAC /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +106,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0156EAD42056AF37001DB206 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0156EAD52056AF37001DB206 /* ViewController.m */,
+				0156EAD62056AF37001DB206 /* ViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0156EAD82056AF5D001DB206 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0156EAD92056AF5D001DB206 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				0156EADB2056AF86001DB206 /* Target_A.h */,
+				0156EADC2056AF86001DB206 /* Target_A.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		0156EADA2056AF5D001DB206 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5138860A20440CC100446703 /* LongConnect */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,36 +154,6 @@
 				5138861120440CC100446703 /* NetRequest.m */,
 			);
 			path = ShortConnect;
-			sourceTree = "<group>";
-		};
-		5172D85A2041592C00E5E981 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5172D85B2041592C00E5E981 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5172D85C2041592C00E5E981 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				5172D85E2041592C00E5E981 /* ViewController.h */,
-				5172D85D2041592C00E5E981 /* ViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		5172D85F2041592C00E5E981 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5172D86120415A3800E5E981 /* Adaptor */ = {
@@ -279,10 +284,10 @@
 		51ACFBA8202806990098BCAC /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
-				5172D85C2041592C00E5E981 /* Controller */,
-				5172D85B2041592C00E5E981 /* Model */,
-				5172D85A2041592C00E5E981 /* View */,
-				5172D85F2041592C00E5E981 /* ViewModel */,
+				0156EAD92056AF5D001DB206 /* Actions */,
+				0156EAD82056AF5D001DB206 /* View */,
+				0156EADA2056AF5D001DB206 /* ViewModel */,
+				0156EAD42056AF37001DB206 /* Controller */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -419,12 +424,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5172D8602041592C00E5E981 /* ViewController.m in Sources */,
 				5138861220440CC100446703 /* NetManager.m in Sources */,
 				51ACFB6E2027FB390098BCAC /* main.m in Sources */,
 				51ACFBAE202806E60098BCAC /* UINavigationController+Hook.m in Sources */,
 				5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */,
+				0156EADD2056AF86001DB206 /* Target_A.m in Sources */,
 				5138861420440CC100446703 /* NetRequest.m in Sources */,
+				0156EAD72056AF37001DB206 /* ViewController.m in Sources */,
 				51ACFBB12028070E0098BCAC /* UITabBarController+Hook.m in Sources */,
 				51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */,
 				51ACFBA0202805DE0098BCAC /* UIViewController+Hook.m in Sources */,
