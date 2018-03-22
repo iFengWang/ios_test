@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ModuleManager+mainTab.h"
+#import "ViewController.h"
+#import "NSMutableDictionary+Hook.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +25,33 @@
     
     NSLog(@"1.........%ld", [NSURLCache sharedURLCache].diskCapacity);
     NSLog(@"2.........%ld", [NSURLCache sharedURLCache].memoryCapacity);
+    
+    // json string conver object ****************************************
+//    NSString * jsonString = @"{\"title\":}";
+//    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+//    NSError *err;
+//    NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
+//    if (err) {
+//        NSLog(@"err......%@",err);
+//    } else {
+//        NSLog(@"dict.....%@",dict);
+//    }
+    
+    //objec convert json string ****************************************
+//    NSDictionary * dict = @{@"title":@"xf"};
+//    NSError * err;
+//    NSData * jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&err];
+//    if (err) {
+//        NSLog(@"err......%@",err);
+//    } else {
+//        NSString * str = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+//        NSLog(@"str.....%@",str);
+//    }
+    
+    id val = nil;
+    NSMutableDictionary * dict = [NSMutableDictionary dictionaryWithCapacity:1];
+    [dict setObject:val forKey:@"title"];
+    NSLog(@"dict......%@",dict);
     
     return YES;
 }
