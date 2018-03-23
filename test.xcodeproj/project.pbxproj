@@ -14,6 +14,7 @@
 		5138862120592BC100446703 /* NSMutableDictionary+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138862020592BC100446703 /* NSMutableDictionary+Hook.m */; };
 		5172D8602041592C00E5E981 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D85D2041592C00E5E981 /* ViewController.m */; };
 		5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D86820415B9900E5E981 /* OneAdaptor.m */; };
+		51865E5F2064986700401736 /* ZTYRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 51865E5E2064986700401736 /* ZTYRequestTask.m */; };
 		51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB5F2027FB390098BCAC /* AppDelegate.m */; };
 		51ACFB682027FB390098BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB672027FB390098BCAC /* Assets.xcassets */; };
 		51ACFB6B2027FB390098BCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB692027FB390098BCAC /* LaunchScreen.storyboard */; };
@@ -57,6 +58,10 @@
 		5172D85E2041592C00E5E981 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5172D86720415B9900E5E981 /* OneAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneAdaptor.h; sourceTree = "<group>"; };
 		5172D86820415B9900E5E981 /* OneAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneAdaptor.m; sourceTree = "<group>"; };
+		51865E5D2064986700401736 /* ZTYRequestTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTYRequestTask.h; sourceTree = "<group>"; };
+		51865E5E2064986700401736 /* ZTYRequestTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTYRequestTask.m; sourceTree = "<group>"; };
+		51865E6020649A7700401736 /* ZTYNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTYNetwork.h; sourceTree = "<group>"; };
+		51865E6120649AAF00401736 /* ZTYNetworkConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTYNetworkConst.h; sourceTree = "<group>"; };
 		51ACFB5B2027FB390098BCAC /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ACFB5E2027FB390098BCAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		51ACFB5F2027FB390098BCAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -163,6 +168,57 @@
 			path = Adaptor;
 			sourceTree = "<group>";
 		};
+		51865E572064982700401736 /* PlatForm */ = {
+			isa = PBXGroup;
+			children = (
+				51865E582064982700401736 /* GlobalConfig */,
+				51865E592064982700401736 /* ModuleManager */,
+				51865E5A2064982700401736 /* NetManager */,
+			);
+			path = PlatForm;
+			sourceTree = "<group>";
+		};
+		51865E582064982700401736 /* GlobalConfig */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GlobalConfig;
+			sourceTree = "<group>";
+		};
+		51865E592064982700401736 /* ModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModuleManager;
+			sourceTree = "<group>";
+		};
+		51865E5A2064982700401736 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				51865E5B2064982700401736 /* Lcs */,
+				51865E5C2064982700401736 /* Scs */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		51865E5B2064982700401736 /* Lcs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lcs;
+			sourceTree = "<group>";
+		};
+		51865E5C2064982700401736 /* Scs */ = {
+			isa = PBXGroup;
+			children = (
+				51865E6020649A7700401736 /* ZTYNetwork.h */,
+				51865E6120649AAF00401736 /* ZTYNetworkConst.h */,
+				51865E5D2064986700401736 /* ZTYRequestTask.h */,
+				51865E5E2064986700401736 /* ZTYRequestTask.m */,
+			);
+			path = Scs;
+			sourceTree = "<group>";
+		};
 		5193F9382041055B003709BA /* Net */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +251,7 @@
 		51ACFB5D2027FB390098BCAC /* test */ = {
 			isa = PBXGroup;
 			children = (
+				51865E572064982700401736 /* PlatForm */,
 				51ACFB952028012E0098BCAC /* Config */,
 				51ACFBA32028067A0098BCAC /* Module */,
 				51ACFB5E2027FB390098BCAC /* AppDelegate.h */,
@@ -426,6 +483,7 @@
 			files = (
 				5172D8602041592C00E5E981 /* ViewController.m in Sources */,
 				5138861220440CC100446703 /* NetManager.m in Sources */,
+				51865E5F2064986700401736 /* ZTYRequestTask.m in Sources */,
 				5138862120592BC100446703 /* NSMutableDictionary+Hook.m in Sources */,
 				51ACFB6E2027FB390098BCAC /* main.m in Sources */,
 				51ACFBAE202806E60098BCAC /* UINavigationController+Hook.m in Sources */,
