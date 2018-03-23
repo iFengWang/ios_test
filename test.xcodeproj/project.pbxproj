@@ -14,9 +14,9 @@
 		513886172056598100446703 /* ModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 513886162056598100446703 /* ModuleManager.m */; };
 		5138861B2056815B00446703 /* ModuleManager+mainTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138861A2056815B00446703 /* ModuleManager+mainTab.m */; };
 		5138862120592BC100446703 /* NSMutableDictionary+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5138862020592BC100446703 /* NSMutableDictionary+Hook.m */; };
-		5172D8602041592C00E5E981 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D85D2041592C00E5E981 /* ViewController.m */; };
 		5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172D86820415B9900E5E981 /* OneAdaptor.m */; };
 		51865E5F2064986700401736 /* ZTYRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 51865E5E2064986700401736 /* ZTYRequestTask.m */; };
+		51865E6420649EFF00401736 /* ZTYScsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51865E6320649EFF00401736 /* ZTYScsEngine.m */; };
 		51ACFB602027FB390098BCAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ACFB5F2027FB390098BCAC /* AppDelegate.m */; };
 		51ACFB682027FB390098BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB672027FB390098BCAC /* Assets.xcassets */; };
 		51ACFB6B2027FB390098BCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51ACFB692027FB390098BCAC /* LaunchScreen.storyboard */; };
@@ -60,14 +60,14 @@
 		5138861A2056815B00446703 /* ModuleManager+mainTab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ModuleManager+mainTab.m"; sourceTree = "<group>"; };
 		5138861F20592BC100446703 /* NSMutableDictionary+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Hook.h"; sourceTree = "<group>"; };
 		5138862020592BC100446703 /* NSMutableDictionary+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Hook.m"; sourceTree = "<group>"; };
-		5172D85D2041592C00E5E981 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5172D85E2041592C00E5E981 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5172D86720415B9900E5E981 /* OneAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneAdaptor.h; sourceTree = "<group>"; };
 		5172D86820415B9900E5E981 /* OneAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneAdaptor.m; sourceTree = "<group>"; };
 		51865E5D2064986700401736 /* ZTYRequestTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTYRequestTask.h; sourceTree = "<group>"; };
 		51865E5E2064986700401736 /* ZTYRequestTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTYRequestTask.m; sourceTree = "<group>"; };
 		51865E6020649A7700401736 /* ZTYNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTYNetwork.h; sourceTree = "<group>"; };
 		51865E6120649AAF00401736 /* ZTYNetworkConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTYNetworkConst.h; sourceTree = "<group>"; };
+		51865E6220649EFF00401736 /* ZTYScsEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTYScsEngine.h; sourceTree = "<group>"; };
+		51865E6320649EFF00401736 /* ZTYScsEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTYScsEngine.m; sourceTree = "<group>"; };
 		51ACFB5B2027FB390098BCAC /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51ACFB5E2027FB390098BCAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		51ACFB5F2027FB390098BCAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -223,6 +223,8 @@
 				51865E6120649AAF00401736 /* ZTYNetworkConst.h */,
 				51865E5D2064986700401736 /* ZTYRequestTask.h */,
 				51865E5E2064986700401736 /* ZTYRequestTask.m */,
+				51865E6220649EFF00401736 /* ZTYScsEngine.h */,
+				51865E6320649EFF00401736 /* ZTYScsEngine.m */,
 			);
 			path = Scs;
 			sourceTree = "<group>";
@@ -493,6 +495,7 @@
 				51865E5F2064986700401736 /* ZTYRequestTask.m in Sources */,
 				5138862120592BC100446703 /* NSMutableDictionary+Hook.m in Sources */,
 				51ACFB6E2027FB390098BCAC /* main.m in Sources */,
+				51865E6420649EFF00401736 /* ZTYScsEngine.m in Sources */,
 				51ACFBAE202806E60098BCAC /* UINavigationController+Hook.m in Sources */,
 				5172D86920415B9900E5E981 /* OneAdaptor.m in Sources */,
 				0156EADD2056AF86001DB206 /* Target_A.m in Sources */,

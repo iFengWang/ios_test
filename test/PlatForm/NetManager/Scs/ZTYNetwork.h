@@ -10,5 +10,6 @@
 #define ZTYNetwork_h
 
 #import "ZTYNetworkConst.h"
+#import "ZTYRequestTask.h"
 
 #endif /* ZTYNetwork_h */
