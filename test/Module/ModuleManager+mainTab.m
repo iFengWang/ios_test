@@ -8,8 +8,11 @@
 
 #import "ModuleManager+mainTab.h"
 
+NSString * const kA = @"A";
+NSString * const kCreateViewController = @"nativeCreateAnViewController";
+
 @implementation ModuleManager (mainTab)
 - (UIViewController*)mainTabViewController {
-    return [self callWithTarget:@"" Action:@"" Param:@{} isCacheTarget:YES];
+    return [self callWithTarget:kA Action:kCreateViewController Param:@{} isCacheTarget:YES];
 }
 @end

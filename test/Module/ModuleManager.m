@@ -33,17 +33,37 @@ do { \
 }
 
 #pragma mark - App 外部 调用模块
-- (void)loadWithUrl:(NSURL*)url Operation:(NSDictionary*)param {
-//      鉴权，解析url和param，当老版本没有对应URL时提示到别处逛逛。
-//    id target = nil;
-//    SEL selector = nil;
-//    NSDictionary *p = nil;
+- (id)loadWithUrl:(NSURL*)url completion:(void(^)(NSDictionary * info))completion {
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    NSString *urlString = [url query];
+    for (NSString *param in [urlString componentsSeparatedByString:@"&"]) {
+        NSArray *elts = [param componentsSeparatedByString:@"="];
+        if([elts count] < 2) continue;
+        [params setObject:[elts lastObject] forKey:[elts firstObject]];
+    }
+    
+    // 这里这么写主要是出于安全考虑，防止黑客通过远程方式调用本地模块。这里的做法足以应对绝大多数场景，如果要求更加严苛，也可以做更加复杂的安全逻辑。
+    NSString *actionName = [url.path stringByReplacingOccurrencesOfString:@"/" withString:@""];
+    if ([actionName hasPrefix:@"native"]) {
+        return @(NO);
+    }
+    
+    // 这个demo针对URL的路由处理非常简单，就只是取对应的target名字和method名字，但这已经足以应对绝大部份需求。如果需要拓展，可以在这个方法调用之前加入完整的路由逻辑
+    id result = [self callWithTarget:url.host Action:actionName Param:params isCacheTarget:NO];
+    if (completion) {
+        if (result) {
+            completion(@{@"result":result});
+        } else {
+            completion(nil);
+        }
+    }
+    return result;
 }
 
 #pragma mark - App 内部 调用模块
 - (id)callWithTarget:(NSString*)targetName Action:(NSString*)actionName Param:(NSDictionary*)param isCacheTarget:(BOOL)isCacheTarget {
     
-    NSString * classString = [NSString stringWithFormat:@"Target_%@:",targetName];
+    NSString * classString = [NSString stringWithFormat:@"Target_%@",targetName];
     NSString * actionString = [NSString stringWithFormat:@"Action_%@:",actionName];
     Class targetClass;
     

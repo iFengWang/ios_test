@@ -10,6 +10,6 @@
 
 @interface ModuleManager : NSObject
 + (instancetype)shardInstance;
-- (void)loadWithUrl:(NSURL*)url Operation:(NSDictionary*)param;
+- (id)loadWithUrl:(NSURL*)url completion:(void(^)(NSDictionary * info))completion;
 - (id)callWithTarget:(NSString*)targetName Action:(NSString*)actionName Param:(NSDictionary*)param isCacheTarget:(BOOL)isCacheTarget;
 @end

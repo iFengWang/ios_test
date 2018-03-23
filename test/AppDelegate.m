@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ModuleManager+mainTab.h"
 #import "ViewController.h"
 #import "NSMutableDictionary+Hook.h"
 
@@ -19,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[ViewController alloc] init];
+    self.window.rootViewController = [[ModuleManager shardInstance] mainTabViewController];
     [self.window makeKeyAndVisible];
     
     NSLog(@"1.........%ld", [NSURLCache sharedURLCache].diskCapacity);
