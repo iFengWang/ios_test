@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>xsyBusinessRecommendation</key>
+	<string>XSYEnterpriseRecommendedController</string>
+	<key>xsyDetailBanner</key>
+	<string>XSYDetailPhotoShowViewController</string>
+	<key>xsyGroupMember</key>
+	<string>XSYTeamWorkController</string>
+	<key>xsyShortCutButton</key>
+	<string>XSYDetailEmptyController</string>
+	<key>xsyObjectGroup</key>
+	<string>XSYDetailEmptyController</string>
+	<key>xsyDetailInfo</key>
+	<string>XSYDetailInfoViewController</string>
+	<key>xsyObjectFeed</key>
+	<string>XSYDetailEmptyController</string>
+	<key>xsyReferSummary</key>
+	<string>XSYDetailEmptyController</string>
+	<key>xsyProcessView</key>
+	<string>XSYDetailEmptyController</string>
+	<key>xsyApprovalBar</key>
+	<string>XSYApprovalFlowController</string>
+	<key>xsyDetailHeadline</key>
+	<string>XSYDetailTitleViewController</string>
+	<key>xsyDetailFeed</key>
+	<string>XSYDetailFeedViewController</string>
+</dict>
+</plist>
